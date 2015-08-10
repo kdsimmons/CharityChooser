@@ -1,0 +1,2945 @@
+2015-07-29 11:55:32,656 CRIT Set uid to user 0
+2015-07-29 11:55:32,658 INFO daemonizing the supervisord process
+2015-07-29 11:55:32,659 INFO supervisord started with pid 5575
+2015-07-29 11:55:33,661 INFO spawned: 'myserver' with pid 5576
+2015-07-29 11:55:33,746 DEBG 'myserver' stderr output:
+[2015-07-29 11:55:33 +0000] [5576] [INFO] Starting gunicorn 19.3.0
+[2015-07-29 11:55:33 +0000] [5576] [INFO] Listening at: http://0.0.0.0:80 (5576)
+[2015-07-29 11:55:33 +0000] [5576] [INFO] Using worker: sync
+
+2015-07-29 11:55:33,746 DEBG 'myserver' stderr output:
+[2015-07-29 11:55:33 +0000] [5581] [INFO] Booting worker with pid: 5581
+
+2015-07-29 11:55:33,756 DEBG 'myserver' stderr output:
+[2015-07-29 11:55:33 +0000] [5582] [INFO] Booting worker with pid: 5582
+
+2015-07-29 11:55:33,796 DEBG 'myserver' stderr output:
+[2015-07-29 11:55:33 +0000] [5583] [INFO] Booting worker with pid: 5583
+
+2015-07-29 11:55:33,828 DEBG 'myserver' stderr output:
+[2015-07-29 11:55:33 +0000] [5586] [INFO] Booting worker with pid: 5586
+
+2015-07-29 11:55:34,829 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-07-29 11:55:57,823 CRIT Set uid to user 0
+2015-07-29 11:55:57,825 INFO daemonizing the supervisord process
+2015-07-29 11:55:57,825 INFO supervisord started with pid 5613
+2015-07-29 11:55:58,828 INFO spawned: 'myserver' with pid 5614
+2015-07-29 11:55:58,912 DEBG 'myserver' stderr output:
+[2015-07-29 11:55:58 +0000] [5614] [INFO] Starting gunicorn 19.3.0
+[2015-07-29 11:55:58 +0000] [5614] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:55:58 +0000] [5614] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:55:59,913 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-07-29 11:55:59,914 DEBG 'myserver' stderr output:
+[2015-07-29 11:55:59 +0000] [5614] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:55:59,914 DEBG 'myserver' stderr output:
+[2015-07-29 11:55:59 +0000] [5614] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:00,916 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:00 +0000] [5614] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:00,916 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:00 +0000] [5614] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:01,917 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:01 +0000] [5614] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:01,918 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:01 +0000] [5614] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:02,919 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:02 +0000] [5614] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:02,919 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:02 +0000] [5614] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:03,921 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:03 +0000] [5614] [ERROR] Can't connect to ('0.0.0.0', 80)
+
+2015-07-29 11:56:03,927 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 140515220610800 for <Subprocess at 140515220610368 with name myserver in state RUNNING> (stdout)>
+2015-07-29 11:56:03,927 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 140515220610872 for <Subprocess at 140515220610368 with name myserver in state RUNNING> (stderr)>
+2015-07-29 11:56:03,927 INFO exited: myserver (exit status 1; not expected)
+2015-07-29 11:56:03,927 DEBG received SIGCLD indicating a child quit
+2015-07-29 11:56:04,929 INFO spawned: 'myserver' with pid 5627
+2015-07-29 11:56:05,015 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:05 +0000] [5627] [INFO] Starting gunicorn 19.3.0
+[2015-07-29 11:56:05 +0000] [5627] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:56:05 +0000] [5627] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:06,016 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-07-29 11:56:06,016 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:06 +0000] [5627] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:06,016 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:06 +0000] [5627] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:07,018 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:07 +0000] [5627] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:07,018 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:07 +0000] [5627] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:08,020 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:08 +0000] [5627] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:08,020 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:08 +0000] [5627] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:09,021 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:09 +0000] [5627] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:56:09 +0000] [5627] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:10,027 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:10 +0000] [5627] [ERROR] Can't connect to ('0.0.0.0', 80)
+
+2015-07-29 11:56:10,029 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 140515220713624 for <Subprocess at 140515220610368 with name myserver in state RUNNING> (stdout)>
+2015-07-29 11:56:10,029 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 140515220734248 for <Subprocess at 140515220610368 with name myserver in state RUNNING> (stderr)>
+2015-07-29 11:56:10,029 INFO exited: myserver (exit status 1; not expected)
+2015-07-29 11:56:10,029 DEBG received SIGCLD indicating a child quit
+2015-07-29 11:56:11,032 INFO spawned: 'myserver' with pid 5634
+2015-07-29 11:56:11,114 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:11 +0000] [5634] [INFO] Starting gunicorn 19.3.0
+[2015-07-29 11:56:11 +0000] [5634] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:56:11 +0000] [5634] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:12,115 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-07-29 11:56:12,115 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:12 +0000] [5634] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:12,115 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:12 +0000] [5634] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:13,117 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:13 +0000] [5634] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:13,117 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:13 +0000] [5634] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:14,119 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:14 +0000] [5634] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:14,119 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:14 +0000] [5634] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:15,121 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:15 +0000] [5634] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:15,122 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:15 +0000] [5634] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:16,122 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:16 +0000] [5634] [ERROR] Can't connect to ('0.0.0.0', 80)
+
+2015-07-29 11:56:16,129 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 140515220610728 for <Subprocess at 140515220610368 with name myserver in state RUNNING> (stdout)>
+2015-07-29 11:56:16,129 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 140515220734248 for <Subprocess at 140515220610368 with name myserver in state RUNNING> (stderr)>
+2015-07-29 11:56:16,129 INFO exited: myserver (exit status 1; not expected)
+2015-07-29 11:56:16,129 DEBG received SIGCLD indicating a child quit
+2015-07-29 11:56:17,131 INFO spawned: 'myserver' with pid 5641
+2015-07-29 11:56:17,214 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:17 +0000] [5641] [INFO] Starting gunicorn 19.3.0
+[2015-07-29 11:56:17 +0000] [5641] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:56:17 +0000] [5641] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:18,215 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-07-29 11:56:18,216 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:18 +0000] [5641] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:56:18 +0000] [5641] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:19,218 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:19 +0000] [5641] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:56:19 +0000] [5641] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:20,220 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:20 +0000] [5641] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:20,220 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:20 +0000] [5641] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:21,221 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:21 +0000] [5641] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:21,221 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:21 +0000] [5641] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:22,222 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:22 +0000] [5641] [ERROR] Can't connect to ('0.0.0.0', 80)
+
+2015-07-29 11:56:22,229 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 140515220610944 for <Subprocess at 140515220610368 with name myserver in state RUNNING> (stdout)>
+2015-07-29 11:56:22,229 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 140515220734248 for <Subprocess at 140515220610368 with name myserver in state RUNNING> (stderr)>
+2015-07-29 11:56:22,229 INFO exited: myserver (exit status 1; not expected)
+2015-07-29 11:56:22,229 DEBG received SIGCLD indicating a child quit
+2015-07-29 11:56:23,231 INFO spawned: 'myserver' with pid 5648
+2015-07-29 11:56:23,314 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:23 +0000] [5648] [INFO] Starting gunicorn 19.3.0
+[2015-07-29 11:56:23 +0000] [5648] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:56:23 +0000] [5648] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:24,315 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-07-29 11:56:24,316 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:24 +0000] [5648] [ERROR] Connection in use: ('0.0.0.0', 80)
+[2015-07-29 11:56:24 +0000] [5648] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:56:25,318 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:25 +0000] [5648] [ERROR] Connection in use: ('0.0.0.0', 80)
+
+2015-07-29 11:56:25,319 DEBG 'myserver' stderr output:
+[2015-07-29 11:56:25 +0000] [5648] [ERROR] Retrying in 1 second.
+
+2015-07-29 11:57:50,936 CRIT Set uid to user 0
+2015-07-29 11:57:50,938 INFO daemonizing the supervisord process
+2015-07-29 11:57:50,939 INFO supervisord started with pid 5702
+2015-07-29 11:57:51,941 INFO spawned: 'myserver' with pid 5703
+2015-07-29 11:57:52,025 DEBG 'myserver' stderr output:
+[2015-07-29 11:57:52 +0000] [5703] [INFO] Starting gunicorn 19.3.0
+[2015-07-29 11:57:52 +0000] [5703] [INFO] Listening at: http://0.0.0.0:80 (5703)
+[2015-07-29 11:57:52 +0000] [5703] [INFO] Using worker: sync
+
+2015-07-29 11:57:52,026 DEBG 'myserver' stderr output:
+[2015-07-29 11:57:52 +0000] [5708] [INFO] Booting worker with pid: 5708
+
+2015-07-29 11:57:52,092 DEBG 'myserver' stderr output:
+[2015-07-29 11:57:52 +0000] [5711] [INFO] Booting worker with pid: 5711
+
+2015-07-29 11:57:52,132 DEBG 'myserver' stderr output:
+[2015-07-29 11:57:52 +0000] [5712] [INFO] Booting worker with pid: 5712
+
+2015-07-29 11:57:52,220 DEBG 'myserver' stderr output:
+[2015-07-29 11:57:52 +0000] [5715] [INFO] Booting worker with pid: 5715
+
+2015-07-29 11:57:53,221 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-02 21:23:32,690 CRIT Set uid to user 0
+2015-08-02 21:23:32,692 INFO daemonizing the supervisord process
+2015-08-02 21:23:32,693 INFO supervisord started with pid 16219
+2015-08-02 21:23:33,695 INFO spawned: 'myserver' with pid 16220
+2015-08-02 21:23:33,779 DEBG 'myserver' stderr output:
+[2015-08-02 21:23:33 +0000] [16220] [INFO] Starting gunicorn 19.3.0
+[2015-08-02 21:23:33 +0000] [16220] [INFO] Listening at: http://0.0.0.0:80 (16220)
+[2015-08-02 21:23:33 +0000] [16220] [INFO] Using worker: sync
+
+2015-08-02 21:23:33,780 DEBG 'myserver' stderr output:
+[2015-08-02 21:23:33 +0000] [16225] [INFO] Booting worker with pid: 16225
+
+2015-08-02 21:23:33,788 DEBG 'myserver' stderr output:
+[2015-08-02 21:23:33 +0000] [16226] [INFO] Booting worker with pid: 16226
+
+2015-08-02 21:23:33,884 DEBG 'myserver' stderr output:
+[2015-08-02 21:23:33 +0000] [16231] [INFO] Booting worker with pid: 16231
+
+2015-08-02 21:23:33,984 DEBG 'myserver' stderr output:
+[2015-08-02 21:23:33 +0000] [16234] [INFO] Booting worker with pid: 16234
+
+2015-08-02 21:23:34,985 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-03 11:22:37,813 CRIT Set uid to user 0
+2015-08-03 11:22:37,816 INFO daemonizing the supervisord process
+2015-08-03 11:22:37,816 INFO supervisord started with pid 17538
+2015-08-03 11:22:38,819 INFO spawned: 'myserver' with pid 17539
+2015-08-03 11:22:38,900 DEBG 'myserver' stderr output:
+[2015-08-03 11:22:38 +0000] [17539] [INFO] Starting gunicorn 19.3.0
+[2015-08-03 11:22:38 +0000] [17539] [INFO] Listening at: http://0.0.0.0:80 (17539)
+[2015-08-03 11:22:38 +0000] [17539] [INFO] Using worker: sync
+
+2015-08-03 11:22:38,901 DEBG 'myserver' stderr output:
+[2015-08-03 11:22:38 +0000] [17544] [INFO] Booting worker with pid: 17544
+
+2015-08-03 11:22:38,968 DEBG 'myserver' stderr output:
+[2015-08-03 11:22:38 +0000] [17547] [INFO] Booting worker with pid: 17547
+
+2015-08-03 11:22:39,064 DEBG 'myserver' stderr output:
+[2015-08-03 11:22:39 +0000] [17550] [INFO] Booting worker with pid: 17550
+
+2015-08-03 11:22:39,164 DEBG 'myserver' stderr output:
+[2015-08-03 11:22:39 +0000] [17554] [INFO] Booting worker with pid: 17554
+
+2015-08-03 11:22:40,165 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-03 11:45:32,962 CRIT Set uid to user 0
+2015-08-03 11:45:32,964 INFO daemonizing the supervisord process
+2015-08-03 11:45:32,965 INFO supervisord started with pid 17760
+2015-08-03 11:45:33,967 INFO spawned: 'myserver' with pid 17761
+2015-08-03 11:45:34,047 DEBG 'myserver' stderr output:
+[2015-08-03 11:45:34 +0000] [17761] [INFO] Starting gunicorn 19.3.0
+
+2015-08-03 11:45:34,048 DEBG 'myserver' stderr output:
+[2015-08-03 11:45:34 +0000] [17761] [INFO] Listening at: http://0.0.0.0:80 (17761)
+[2015-08-03 11:45:34 +0000] [17761] [INFO] Using worker: sync
+
+2015-08-03 11:45:34,049 DEBG 'myserver' stderr output:
+[2015-08-03 11:45:34 +0000] [17766] [INFO] Booting worker with pid: 17766
+
+2015-08-03 11:45:34,124 DEBG 'myserver' stderr output:
+[2015-08-03 11:45:34 +0000] [17769] [INFO] Booting worker with pid: 17769
+
+2015-08-03 11:45:34,176 DEBG 'myserver' stderr output:
+[2015-08-03 11:45:34 +0000] [17770] [INFO] Booting worker with pid: 17770
+
+2015-08-03 11:45:34,212 DEBG 'myserver' stderr output:
+[2015-08-03 11:45:34 +0000] [17773] [INFO] Booting worker with pid: 17773
+
+2015-08-03 11:45:35,213 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-03 15:11:18,127 CRIT Set uid to user 0
+2015-08-03 15:11:18,130 INFO daemonizing the supervisord process
+2015-08-03 15:11:18,130 INFO supervisord started with pid 18184
+2015-08-03 15:11:19,132 INFO spawned: 'myserver' with pid 18185
+2015-08-03 15:11:19,220 DEBG 'myserver' stderr output:
+[2015-08-03 15:11:19 +0000] [18185] [INFO] Starting gunicorn 19.3.0
+[2015-08-03 15:11:19 +0000] [18185] [INFO] Listening at: http://0.0.0.0:80 (18185)
+[2015-08-03 15:11:19 +0000] [18185] [INFO] Using worker: sync
+
+2015-08-03 15:11:19,221 DEBG 'myserver' stderr output:
+[2015-08-03 15:11:19 +0000] [18190] [INFO] Booting worker with pid: 18190
+
+2015-08-03 15:11:19,300 DEBG 'myserver' stderr output:
+[2015-08-03 15:11:19 +0000] [18193] [INFO] Booting worker with pid: 18193
+
+2015-08-03 15:11:19,380 DEBG 'myserver' stderr output:
+[2015-08-03 15:11:19 +0000] [18196] [INFO] Booting worker with pid: 18196
+
+2015-08-03 15:11:19,412 DEBG 'myserver' stderr output:
+[2015-08-03 15:11:19 +0000] [18197] [INFO] Booting worker with pid: 18197
+
+2015-08-03 15:11:20,413 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-03 15:12:22,939 CRIT Set uid to user 0
+2015-08-03 15:12:22,941 INFO daemonizing the supervisord process
+2015-08-03 15:12:22,942 INFO supervisord started with pid 18246
+2015-08-03 15:12:23,944 INFO spawned: 'myserver' with pid 18247
+2015-08-03 15:12:24,026 DEBG 'myserver' stderr output:
+[2015-08-03 15:12:24 +0000] [18247] [INFO] Starting gunicorn 19.3.0
+[2015-08-03 15:12:24 +0000] [18247] [INFO] Listening at: http://0.0.0.0:80 (18247)
+[2015-08-03 15:12:24 +0000] [18247] [INFO] Using worker: sync
+
+2015-08-03 15:12:24,027 DEBG 'myserver' stderr output:
+[2015-08-03 15:12:24 +0000] [18252] [INFO] Booting worker with pid: 18252
+
+2015-08-03 15:12:24,076 DEBG 'myserver' stderr output:
+[2015-08-03 15:12:24 +0000] [18255] [INFO] Booting worker with pid: 18255
+
+2015-08-03 15:12:24,092 DEBG 'myserver' stderr output:
+[2015-08-03 15:12:24 +0000] [18256] [INFO] Booting worker with pid: 18256
+
+2015-08-03 15:12:24,132 DEBG 'myserver' stderr output:
+[2015-08-03 15:12:24 +0000] [18257] [INFO] Booting worker with pid: 18257
+
+2015-08-03 15:12:25,133 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-03 15:43:01,212 CRIT Set uid to user 0
+2015-08-03 15:43:01,215 INFO daemonizing the supervisord process
+2015-08-03 15:43:01,215 INFO supervisord started with pid 18673
+2015-08-03 15:43:02,217 INFO spawned: 'myserver' with pid 18674
+2015-08-03 15:43:02,298 DEBG 'myserver' stderr output:
+[2015-08-03 15:43:02 +0000] [18674] [INFO] Starting gunicorn 19.3.0
+[2015-08-03 15:43:02 +0000] [18674] [INFO] Listening at: http://0.0.0.0:80 (18674)
+[2015-08-03 15:43:02 +0000] [18674] [INFO] Using worker: sync
+
+2015-08-03 15:43:02,299 DEBG 'myserver' stderr output:
+[2015-08-03 15:43:02 +0000] [18679] [INFO] Booting worker with pid: 18679
+
+2015-08-03 15:43:02,372 DEBG 'myserver' stderr output:
+[2015-08-03 15:43:02 +0000] [18682] [INFO] Booting worker with pid: 18682
+
+2015-08-03 15:43:02,412 DEBG 'myserver' stderr output:
+[2015-08-03 15:43:02 +0000] [18683] [INFO] Booting worker with pid: 18683
+
+2015-08-03 15:43:02,440 DEBG 'myserver' stderr output:
+[2015-08-03 15:43:02 +0000] [18684] [INFO] Booting worker with pid: 18684
+
+2015-08-03 15:43:03,441 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-03 16:51:13,868 DEBG 'myserver' stderr output:
+[2015-08-03 16:51:13 +0000] [18674] [CRITICAL] WORKER TIMEOUT (pid:18682)
+
+2015-08-03 16:51:13,871 DEBG 'myserver' stderr output:
+[2015-08-03 16:51:13 +0000] [18682] [INFO] Worker exiting (pid: 18682)
+
+2015-08-03 16:51:13,875 DEBG 'myserver' stderr output:
+[2015-08-03 16:51:13 +0000] [18674] [CRITICAL] WORKER TIMEOUT (pid:18684)
+
+2015-08-03 16:51:13,879 DEBG 'myserver' stderr output:
+[2015-08-03 16:51:13 +0000] [18684] [INFO] Worker exiting (pid: 18684)
+
+2015-08-03 16:51:13,925 DEBG 'myserver' stderr output:
+[2015-08-03 16:51:13 +0000] [18758] [INFO] Booting worker with pid: 18758
+
+2015-08-03 16:51:13,927 DEBG 'myserver' stderr output:
+[2015-08-03 16:51:13 +0000] [18759] [INFO] Booting worker with pid: 18759
+
+2015-08-04 02:06:27,504 CRIT Set uid to user 0
+2015-08-04 02:06:27,507 INFO daemonizing the supervisord process
+2015-08-04 02:06:27,507 INFO supervisord started with pid 19524
+2015-08-04 02:06:28,509 INFO spawned: 'myserver' with pid 19525
+2015-08-04 02:06:28,594 DEBG 'myserver' stderr output:
+[2015-08-04 02:06:28 +0000] [19525] [INFO] Starting gunicorn 19.3.0
+[2015-08-04 02:06:28 +0000] [19525] [INFO] Listening at: http://0.0.0.0:80 (19525)
+[2015-08-04 02:06:28 +0000] [19525] [INFO] Using worker: sync
+
+2015-08-04 02:06:28,595 DEBG 'myserver' stderr output:
+[2015-08-04 02:06:28 +0000] [19530] [INFO] Booting worker with pid: 19530
+
+2015-08-04 02:06:28,668 DEBG 'myserver' stderr output:
+[2015-08-04 02:06:28 +0000] [19533] [INFO] Booting worker with pid: 19533
+
+2015-08-04 02:06:28,744 DEBG 'myserver' stderr output:
+[2015-08-04 02:06:28 +0000] [19536] [INFO] Booting worker with pid: 19536
+
+2015-08-04 02:06:28,808 DEBG 'myserver' stderr output:
+[2015-08-04 02:06:28 +0000] [19537] [INFO] Booting worker with pid: 19537
+
+2015-08-04 02:06:29,809 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-04 02:20:52,212 CRIT Set uid to user 0
+2015-08-04 02:20:52,215 INFO daemonizing the supervisord process
+2015-08-04 02:20:52,215 INFO supervisord started with pid 19638
+2015-08-04 02:20:53,217 INFO spawned: 'myserver' with pid 19639
+2015-08-04 02:20:53,301 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:53 +0000] [19639] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f0219877320>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f0219877050>
+  pre_fork: <function pre_fork at 0x7f02198771b8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 0
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 4
+  proc_name: None
+  sendfile: True
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f02198efe60>
+  pre_exec: <function pre_exec at 0x7f02198778c0>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f0219877488>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f0219877f50>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f0219877a28>
+  post_request: <function post_request at 0x7f0219877b18>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f02198775f0>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f0219877c80>
+  chdir: /home/ubuntu/app
+  paste: None
+  default_proc_name: views:app
+  errorlog: -
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f02198efcf8>
+  worker_abort: <function worker_abort at 0x7f0219877758>
+  bind: ['0.0.0.0:80']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f0219877de8>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2015-08-04 02:20:53 +0000] [19639] [INFO] Starting gunicorn 19.3.0
+[2015-08-04 02:20:53 +0000] [19639] [DEBUG] Arbiter booted
+[2015-08-04 02:20:53 +0000] [19639] [INFO] Listening at: http://0.0.0.0:80 (19639)
+[2015-08-04 02:20:53 +0000] [19639] [INFO] Using worker: sync
+
+2015-08-04 02:20:53,302 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:53 +0000] [19644] [INFO] Booting worker with pid: 19644
+
+2015-08-04 02:20:53,332 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:53 +0000] [19645] [INFO] Booting worker with pid: 19645
+
+2015-08-04 02:20:53,436 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:53 +0000] [19650] [INFO] Booting worker with pid: 19650
+
+2015-08-04 02:20:53,488 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:53 +0000] [19651] [INFO] Booting worker with pid: 19651
+
+2015-08-04 02:20:53,527 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:20:54,529 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:20:54,529 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-04 02:20:55,530 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:20:56,532 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:20:57,533 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:20:58,536 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:20:59,536 DEBG 'myserver' stderr output:
+[2015-08-04 02:20:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:00,537 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:01,539 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:01,559 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:01 +0000] [19650] [DEBUG] GET /output
+
+2015-08-04 02:21:02,447 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:02 +0000] [19645] [DEBUG] GET /static/css/bootstrap.min.css
+
+2015-08-04 02:21:02,455 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:02 +0000] [19644] [DEBUG] GET /assets/js/ie-emulation-modes-warning.js
+[2015-08-04 02:21:02 +0000] [19651] [DEBUG] GET /static/js/jquery-1.11.0.min.js
+
+2015-08-04 02:21:02,456 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:02 +0000] [19650] [DEBUG] GET /starter-template.css
+
+2015-08-04 02:21:02,463 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:02 +0000] [19651] [DEBUG] GET /static/js/bootstrap.min.js
+
+2015-08-04 02:21:02,539 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:03,007 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:03 +0000] [19651] [DEBUG] GET /assets/js/ie-emulation-modes-warning.js
+[2015-08-04 02:21:03 +0000] [19645] [DEBUG] GET /starter-template.css
+
+2015-08-04 02:21:03,542 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:04,395 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:04 +0000] [19650] [DEBUG] GET /static/js/jquery-1.10.2.min.js
+
+2015-08-04 02:21:04,531 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:04 +0000] [19644] [DEBUG] GET /static/js/jquery.min.js
+
+2015-08-04 02:21:04,542 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:04,556 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:04 +0000] [19645] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:21:04,832 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:04 +0000] [19651] [DEBUG] GET /static/js/bootstrap.min.js
+
+2015-08-04 02:21:05,114 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:05 +0000] [19650] [DEBUG] GET /static/js/bootstrap.min.js
+
+2015-08-04 02:21:05,320 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:05 +0000] [19645] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:21:05,543 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:06,544 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:07,546 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:08,548 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:08 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:09,549 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:09 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:10,550 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:10 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:11,552 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:11 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:12,553 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:12 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:13,556 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:13 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:14,556 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:14 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:15,557 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:15 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:16,559 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:16 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:17,560 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:17 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:18,563 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:18 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:19,563 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:19 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:20,564 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:20 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:21,566 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:21 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:22,567 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:22 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:23,570 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:23 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:24,570 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:24 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:25,571 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:25 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:26,573 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:26 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:27,574 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:27 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:28,577 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:28 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:29,577 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:29 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:30,579 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:30 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:31,580 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:31 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:32,581 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:32 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:33,584 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:33 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:34,584 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:34 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:35,586 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:35 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:36,587 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:36 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:37,589 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:37 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:38,591 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:38 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:39,591 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:39 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:40,593 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:40 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:41,594 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:41 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:42,596 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:42 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:43,598 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:43 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:44,599 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:44 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:45,600 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:45 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:46,601 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:46 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:47,603 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:47 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:48,605 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:48 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:49,606 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:49 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:50,607 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:50 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:51,608 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:51 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:52,610 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:52 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:53,612 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:54,613 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:55,614 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:56,616 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:57,617 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:58,620 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:21:59,620 DEBG 'myserver' stderr output:
+[2015-08-04 02:21:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:00,621 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:01,623 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:02,624 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:03,627 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:04,627 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:05,629 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:06,630 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:07,632 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:08,634 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:08 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:09,634 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:09 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:10,636 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:10 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:11,637 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:11 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:12,639 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:12 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:13,641 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:13 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:14,642 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:14 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:15,643 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:15 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:16,645 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:16 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:17,646 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:17 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:18,649 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:18 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:19,649 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:19 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:20,650 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:20 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:21,652 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:21 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:22,653 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:22 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:23,656 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:23 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:24,656 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:24 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:25,657 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:25 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:26,659 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:26 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:27,660 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:27 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:28,663 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:28 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:29,663 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:29 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:30,665 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:30 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:31,666 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:31 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:32,667 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:32 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:33,670 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:33 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:34,670 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:34 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:35,672 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:35 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:36,673 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:36 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:37,675 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:37 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:38,677 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:38 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:39,677 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:39 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:40,679 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:40 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:41,680 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:41 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:42,682 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:42 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:43,685 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:43 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:44,685 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:44 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:45,686 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:45 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:46,688 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:46 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:47,689 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:47 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:48,692 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:48 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:49,692 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:49 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:50,693 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:50 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:51,695 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:51 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:52,695 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:52 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:53,698 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:54,698 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:55,700 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:56,701 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:57,703 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:58,705 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:22:59,705 DEBG 'myserver' stderr output:
+[2015-08-04 02:22:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:00,707 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:01,708 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:02,710 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:03,712 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:04,712 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:05,714 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:06,715 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:07,717 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:08,720 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:08 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:09,720 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:09 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:10,721 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:10 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:11,722 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:11 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:12,724 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:12 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:13,726 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:13 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:14,727 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:14 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:15,728 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:15 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:16,730 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:16 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:17,731 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:17 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:18,734 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:18 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:19,734 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:19 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:20,735 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:20 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:21,737 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:21 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:22,738 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:22 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:23,741 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:23 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:24,741 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:24 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:25,742 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:25 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:26,744 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:26 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:27,745 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:27 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:28,748 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:28 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:29,748 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:29 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:30,749 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:30 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:31,751 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:31 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:32,752 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:32 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:33,755 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:33 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:34,755 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:34 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:35,757 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:35 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:36,758 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:36 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:37,759 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:37 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:38,762 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:38 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:39,762 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:39 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:40,764 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:40 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:41,765 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:41 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:42,767 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:42 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:43,772 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:43 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:44,769 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:44 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:45,771 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:45 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:46,772 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:46 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:47,774 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:47 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:48,776 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:48 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:49,777 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:49 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:50,778 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:50 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:51,780 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:51 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:52,781 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:52 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:53,783 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:54,784 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:55,785 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:56,787 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:57,788 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:58,790 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:23:59,791 DEBG 'myserver' stderr output:
+[2015-08-04 02:23:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:00,792 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:01,794 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:02,795 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:03,797 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:04,800 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:05,799 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:06,801 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:07,802 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:08,804 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:08 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:09,806 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:09 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:10,806 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:10 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:11,808 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:11 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:12,809 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:12 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:13,811 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:13 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:14,812 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:14 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:15,814 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:15 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:16,815 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:16 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:17,817 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:17 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:18,818 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:18 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:19,819 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:19 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:20,822 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:20 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:21,822 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:21 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:22,824 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:22 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:23,825 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:23 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:24,827 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:24 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:25,829 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:25 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:26,829 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:26 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:27,831 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:27 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:28,832 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:28 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:29,834 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:29 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:30,836 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:30 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:31,837 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:31 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:32,838 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:32 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:33,839 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:33 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:34,841 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:34 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:35,844 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:35 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:36,844 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:36 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:37,845 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:37 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:38,846 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:38 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:39,848 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:39 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:40,850 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:40 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:41,851 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:41 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:42,852 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:42 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:43,853 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:43 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:44,855 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:44 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:45,858 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:45 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:46,858 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:46 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:47,859 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:47 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:48,861 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:48 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:49,862 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:49 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:50,865 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:50 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:51,865 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:51 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:52,866 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:52 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:53,868 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:54,869 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:55,872 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:56,872 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:57,873 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:58,875 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:24:59,876 DEBG 'myserver' stderr output:
+[2015-08-04 02:24:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:00,879 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:01,879 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:02,881 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:03,882 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:04,883 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:05,886 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:06,886 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:07,888 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:08,889 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:08 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:09,891 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:09 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:10,893 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:10 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:11,894 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:11 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:12,895 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:12 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:13,896 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:13 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:14,898 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:14 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:15,900 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:15 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:16,901 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:16 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:17,902 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:17 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:18,904 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:18 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:19,905 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:19 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:20,907 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:20 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:21,908 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:21 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:22,909 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:22 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:23,911 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:23 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:24,912 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:24 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:25,915 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:25 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:26,915 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:26 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:27,917 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:27 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:28,918 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:28 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:29,919 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:29 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:30,922 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:30 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:31,922 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:31 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:32,924 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:32 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:33,925 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:33 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:34,926 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:34 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:35,929 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:35 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:36,929 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:36 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:37,931 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:37 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:38,932 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:38 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:39,934 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:39 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:40,936 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:40 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:41,936 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:41 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:42,938 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:42 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:43,939 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:43 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:44,941 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:44 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:45,943 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:45 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:46,944 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:46 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:47,945 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:47 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:48,264 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:48 +0000] [19650] [DEBUG] Closing connection. 
+
+2015-08-04 02:25:48,946 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:48 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:49,948 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:49 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:50,950 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:50 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:51,950 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:51 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:52,952 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:52 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:53,953 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:54,955 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:55,956 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:56,958 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:57,959 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:58,961 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:25:59,962 DEBG 'myserver' stderr output:
+[2015-08-04 02:25:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:00,963 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:01,966 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:02,966 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:03,968 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:04,969 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:05,971 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:06,973 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:07,973 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:08,975 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:08 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:09,976 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:09 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:10,978 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:10 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:11,980 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:11 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:12,980 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:12 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:13,982 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:13 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:14,983 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:14 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:15,985 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:15 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:16,987 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:16 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:17,987 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:17 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:18,989 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:18 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:19,990 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:19 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:20,991 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:20 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:21,994 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:21 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:22,994 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:22 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:23,995 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:23 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:24,997 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:24 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:25,998 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:25 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:27,001 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:26 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:28,001 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:28 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:29,002 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:29 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:30,004 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:30 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:31,005 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:31 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:32,008 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:32 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:33,008 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:33 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:34,009 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:34 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:35,011 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:35 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:36,012 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:36 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:37,014 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:37 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:38,015 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:38 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:39,017 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:39 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:40,018 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:40 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:41,019 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:41 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:42,021 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:42 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:43,022 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:43 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:44,024 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:44 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:45,025 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:45 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:46,027 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:46 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:47,028 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:47 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:48,029 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:48 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:49,031 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:49 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:50,032 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:50 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:51,034 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:51 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:52,035 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:52 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:53,036 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:54,038 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:55,039 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:56,041 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:57,042 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:58,044 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:26:59,045 DEBG 'myserver' stderr output:
+[2015-08-04 02:26:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:00,046 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:01,048 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:02,049 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:03,051 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:04,052 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:05,053 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:06,055 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:07,056 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:08,058 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:08 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:09,059 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:09 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:10,061 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:10 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:11,062 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:11 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:12,064 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:12 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:13,065 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:13 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:14,066 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:14 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:15,068 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:15 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:16,069 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:16 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:17,071 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:17 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:18,073 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:18 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:19,073 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:19 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:20,075 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:20 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:21,076 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:21 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:22,078 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:22 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:23,079 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:23 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:24,081 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:24 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:25,082 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:25 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:26,083 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:26 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:27,085 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:27 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:28,086 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:28 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:29,088 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:29 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:30,089 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:30 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:31,090 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:31 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:32,092 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:32 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:33,093 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:33 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:34,095 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:34 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:35,096 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:35 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:36,098 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:36 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:37,099 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:37 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:38,101 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:38 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:39,102 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:39 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:40,103 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:40 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:41,105 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:41 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:42,106 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:42 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:43,107 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:43 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:44,109 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:44 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:45,110 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:45 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:46,112 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:46 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:47,113 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:47 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:48,115 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:48 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:49,116 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:49 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:50,117 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:50 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:51,119 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:51 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:52,120 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:52 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:53,122 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:54,123 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:55,125 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:56,126 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:57,127 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:58,129 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:27:59,130 DEBG 'myserver' stderr output:
+[2015-08-04 02:27:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:00,132 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:01,133 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:02,135 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:03,136 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:04,137 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:05,139 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:06,140 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:07,142 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:08,143 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:08 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:09,143 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:09 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:10,144 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:10 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:11,145 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:11 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:12,145 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:12 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:13,147 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:13 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:14,148 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:14 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:15,150 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:15 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:16,151 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:16 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:17,153 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:17 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:18,154 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:18 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:19,155 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:19 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:20,157 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:20 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:21,158 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:21 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:22,160 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:22 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:23,161 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:23 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:24,162 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:24 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:25,164 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:25 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:26,165 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:26 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:27,167 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:27 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:28,168 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:28 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:29,171 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:29 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:30,171 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:30 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:31,172 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:31 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:32,174 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:32 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:33,175 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:33 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:34,178 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:34 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:35,178 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:35 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:36,180 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:36 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:37,181 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:37 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:38,182 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:38 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:39,185 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:39 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:40,185 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:40 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:41,187 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:41 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:42,188 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:42 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:43,190 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:43 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:44,191 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:44 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:45,193 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:45 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:46,194 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:46 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:47,195 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:47 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:48,197 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:48 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:49,198 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:49 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:50,201 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:50 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:51,201 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:51 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:52,202 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:52 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:53,204 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:53 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:54,205 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:54 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:55,208 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:55 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:56,208 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:56 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:57,209 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:57 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:58,211 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:58 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:28:59,212 DEBG 'myserver' stderr output:
+[2015-08-04 02:28:59 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:29:00,215 DEBG 'myserver' stderr output:
+[2015-08-04 02:29:00 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:29:01,215 DEBG 'myserver' stderr output:
+[2015-08-04 02:29:01 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:29:02,217 DEBG 'myserver' stderr output:
+[2015-08-04 02:29:02 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:29:03,218 DEBG 'myserver' stderr output:
+[2015-08-04 02:29:03 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:29:04,219 DEBG 'myserver' stderr output:
+[2015-08-04 02:29:04 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:29:05,222 DEBG 'myserver' stderr output:
+[2015-08-04 02:29:05 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:29:06,222 DEBG 'myserver' stderr output:
+[2015-08-04 02:29:06 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:29:07,224 DEBG 'myserver' stderr output:
+[2015-08-04 02:29:07 +0000] [19639] [DEBUG] 4 workers
+
+2015-08-04 02:30:09,994 CRIT Set uid to user 0
+2015-08-04 02:30:09,996 INFO daemonizing the supervisord process
+2015-08-04 02:30:09,996 INFO supervisord started with pid 19713
+2015-08-04 02:30:10,999 INFO spawned: 'myserver' with pid 19714
+2015-08-04 02:30:11,079 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:11 +0000] [19714] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f4a348b0320>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f4a348b0050>
+  pre_fork: <function pre_fork at 0x7f4a348b01b8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 0
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 4
+  proc_name: None
+  sendfile: True
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f4a34928e60>
+  pre_exec: <function pre_exec at 0x7f4a348b08c0>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f4a348b0488>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f4a348b0f50>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f4a348b0a28>
+  post_request: <function post_request at 0x7f4a348b0b18>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f4a348b05f0>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f4a348b0c80>
+  chdir: /home/ubuntu/app
+  paste: None
+  default_proc_name: views:app
+  errorlog: -
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f4a34928cf8>
+  worker_abort: <function worker_abort at 0x7f4a348b0758>
+  bind: ['0.0.0.0:80']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f4a348b0de8>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+
+2015-08-04 02:30:11,080 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:11 +0000] [19714] [INFO] Starting gunicorn 19.3.0
+[2015-08-04 02:30:11 +0000] [19714] [DEBUG] Arbiter booted
+[2015-08-04 02:30:11 +0000] [19714] [INFO] Listening at: http://0.0.0.0:80 (19714)
+[2015-08-04 02:30:11 +0000] [19714] [INFO] Using worker: sync
+
+2015-08-04 02:30:11,081 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:11 +0000] [19719] [INFO] Booting worker with pid: 19719
+
+2015-08-04 02:30:11,144 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:11 +0000] [19722] [INFO] Booting worker with pid: 19722
+
+2015-08-04 02:30:11,156 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:11 +0000] [19723] [INFO] Booting worker with pid: 19723
+
+2015-08-04 02:30:11,236 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:11 +0000] [19726] [INFO] Booting worker with pid: 19726
+
+2015-08-04 02:30:11,324 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:11 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:12,326 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:12 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:12,326 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-04 02:30:13,327 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:13 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:14,329 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:14 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:14,639 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:14 +0000] [19722] [DEBUG] GET /output
+
+2015-08-04 02:30:15,332 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:15 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:16,331 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:16 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:17,333 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:17 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:18,334 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:18 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:19,336 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:19 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:20,338 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:20 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:21,338 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:21 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:22,340 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:22 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:23,341 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:23 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:23,639 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:23 +0000] [19726] [DEBUG] Closing connection. 
+
+2015-08-04 02:30:24,343 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:24 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:25,345 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:25 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:26,345 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:26 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:27,347 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:27 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:28,127 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:28 +0000] [19719] [DEBUG] GET /input
+
+2015-08-04 02:30:28,348 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:28 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:29,350 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:29 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:30,352 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:30 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:31,352 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:31 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:32,354 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:32 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:33,355 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:33 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:34,357 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:34 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:35,359 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:35 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:36,360 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:36 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:37,361 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:37 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:38,362 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:38 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:39,364 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:39 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:40,366 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:40 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:41,367 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:41 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:42,368 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:42 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:43,370 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:43 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:44,371 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:44 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:45,374 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:45 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:46,374 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:46 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:47,375 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:47 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:47,492 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:47 +0000] [19723] [DEBUG] Closing connection. 
+
+2015-08-04 02:30:48,377 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:48 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:49,378 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:49 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:50,381 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:50 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:51,381 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:51 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:52,382 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:52 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:53,384 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:53 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:54,385 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:54 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:55,388 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:55 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:56,388 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:56 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:57,389 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:57 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:58,391 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:58 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:30:59,392 DEBG 'myserver' stderr output:
+[2015-08-04 02:30:59 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:00,395 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:00 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:01,395 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:01 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:02,397 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:02 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:03,398 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:03 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:04,400 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:04 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:04,611 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:04 +0000] [19726] [DEBUG] GET /starter-template.css
+[2015-08-04 02:31:04 +0000] [19723] [DEBUG] GET /dist/js/bootstrap.min.js
+[2015-08-04 02:31:04 +0000] [19722] [DEBUG] GET /assets/js/ie-emulation-modes-warning.js
+[2015-08-04 02:31:04 +0000] [19719] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:31:05,402 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:05 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:06,402 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:06 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:06,557 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:06 +0000] [19719] [DEBUG] GET /dist/js/bootstrap.min.js
+
+2015-08-04 02:31:06,933 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:06 +0000] [19722] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:31:07,404 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:07 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:08,405 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:08 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:09,407 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:09 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:10,409 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:10 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:11,410 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:11 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:12,411 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:12 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:13,412 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:13 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:14,414 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:14 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:15,416 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:15 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:16,417 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:16 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:17,418 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:17 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:18,420 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:18 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:19,421 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:19 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:20,424 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:20 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:21,424 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:21 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:22,425 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:22 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:23,427 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:23 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:24,428 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:24 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:25,431 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:25 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:26,431 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:26 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:27,433 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:27 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:28,434 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:28 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:29,435 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:29 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:30,438 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:30 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:31,438 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:31 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:32,440 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:32 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:33,441 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:33 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:34,442 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:34 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:35,445 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:35 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:36,445 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:36 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:37,447 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:37 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:38,448 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:38 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:39,450 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:39 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:40,452 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:40 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:41,452 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:41 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:42,454 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:42 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:43,455 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:43 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:44,457 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:44 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:45,459 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:45 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:46,155 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:46 +0000] [19722] [DEBUG] GET /output
+
+2015-08-04 02:31:46,459 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:46 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:46,559 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:46 +0000] [19723] [DEBUG] GET /starter-template.css
+
+2015-08-04 02:31:46,560 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:46 +0000] [19719] [DEBUG] GET /assets/js/ie-emulation-modes-warning.js
+
+2015-08-04 02:31:46,897 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:46 +0000] [19723] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:31:47,461 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:47 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:47,481 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:47 +0000] [19726] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:31:48,462 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:48 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:49,464 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:49 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:50,466 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:50 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:51,466 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:51 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:52,155 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:52 +0000] [19719] [DEBUG] Closing connection. 
+
+2015-08-04 02:31:52,468 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:52 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:53,469 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:53 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:54,470 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:54 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:55,473 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:55 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:56,473 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:56 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:57,260 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:57 +0000] [19726] [DEBUG] Closing connection. 
+
+2015-08-04 02:31:57,474 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:57 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:58,476 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:58 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:31:59,477 DEBG 'myserver' stderr output:
+[2015-08-04 02:31:59 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:00,479 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:00 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:01,480 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:01 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:02,482 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:02 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:03,483 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:03 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:04,484 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:04 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:05,486 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:05 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:06,488 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:06 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:07,489 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:07 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:08,490 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:08 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:09,492 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:09 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:10,493 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:10 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:11,495 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:11 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:12,496 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:12 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:13,497 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:13 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:14,499 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:14 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:15,500 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:15 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:16,503 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:16 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:17,503 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:17 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:18,504 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:18 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:19,506 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:19 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:20,507 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:20 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:21,510 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:21 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:22,510 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:22 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:23,511 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:23 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:24,513 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:24 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:25,514 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:25 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:26,517 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:26 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:27,517 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:27 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:28,519 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:28 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:29,520 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:29 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:30,521 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:30 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:31,524 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:31 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:32,524 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:32 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:33,526 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:33 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:34,527 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:34 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:35,528 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:35 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:36,531 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:36 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:37,531 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:37 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:38,533 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:38 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:39,534 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:39 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:40,535 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:40 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:41,537 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:41 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:42,538 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:42 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:43,540 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:43 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:44,541 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:44 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:45,543 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:45 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:46,544 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:46 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:47,547 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:47 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:48,547 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:48 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:49,548 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:49 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:50,550 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:50 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:51,551 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:51 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:52,554 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:52 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:53,554 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:53 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:54,555 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:54 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:55,557 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:55 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:56,558 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:56 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:57,561 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:57 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:58,561 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:58 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:32:59,562 DEBG 'myserver' stderr output:
+[2015-08-04 02:32:59 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:33:00,564 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:00 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:33:01,565 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:01 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:33:02,568 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:02 +0000] [19714] [DEBUG] 4 workers
+
+2015-08-04 02:33:57,866 CRIT Set uid to user 0
+2015-08-04 02:33:57,868 INFO daemonizing the supervisord process
+2015-08-04 02:33:57,868 INFO supervisord started with pid 19757
+2015-08-04 02:33:58,870 INFO spawned: 'myserver' with pid 19758
+2015-08-04 02:33:58,951 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:58 +0000] [19758] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fe2b7c86320>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fe2b7c86050>
+  pre_fork: <function pre_fork at 0x7fe2b7c861b8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: None
+  group: 0
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 4
+  proc_name: None
+  sendfile: True
+  pidfile: None
+  umask: 0
+  on_reload: <function on_reload at 0x7fe2b7cfee60>
+  pre_exec: <function pre_exec at 0x7fe2b7c868c0>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fe2b7c86488>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fe2b7c86f50>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fe2b7c86a28>
+  post_request: <function post_request at 0x7fe2b7c86b18>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fe2b7c865f0>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fe2b7c86c80>
+  chdir: /home/ubuntu/app
+  paste: None
+  default_proc_name: views:app
+  errorlog: -
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: False
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fe2b7cfecf8>
+  worker_abort: <function worker_abort at 0x7fe2b7c86758>
+  bind: ['0.0.0.0:80']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fe2b7c86de8>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2015-08-04 02:33:58 +0000] [19758] [INFO] Starting gunicorn 19.3.0
+
+2015-08-04 02:33:58,951 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:58 +0000] [19758] [DEBUG] Arbiter booted
+
+2015-08-04 02:33:58,952 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:58 +0000] [19758] [INFO] Listening at: http://0.0.0.0:80 (19758)
+[2015-08-04 02:33:58 +0000] [19758] [INFO] Using worker: sync
+
+2015-08-04 02:33:58,953 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:58 +0000] [19763] [INFO] Booting worker with pid: 19763
+
+2015-08-04 02:33:58,964 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:58 +0000] [19764] [INFO] Booting worker with pid: 19764
+
+2015-08-04 02:33:58,980 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:58 +0000] [19765] [INFO] Booting worker with pid: 19765
+
+2015-08-04 02:33:59,048 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:59 +0000] [19768] [INFO] Booting worker with pid: 19768
+
+2015-08-04 02:33:59,105 DEBG 'myserver' stderr output:
+[2015-08-04 02:33:59 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:00,106 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:00 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:00,106 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-08-04 02:34:01,108 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:01 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:02,109 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:02 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:03,110 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:03 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:04,112 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:04 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:05,113 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:05 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:06,115 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:06 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:07,116 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:07 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:08,119 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:08 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:08,863 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:08 +0000] [19765] [DEBUG] GET /input
+
+2015-08-04 02:34:09,073 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:09 +0000] [19763] [DEBUG] GET /static/js/jquery-1.11.0.min.js
+
+2015-08-04 02:34:09,075 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:09 +0000] [19768] [DEBUG] GET /static/css/bootstrap.min.css
+
+2015-08-04 02:34:09,110 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:09 +0000] [19764] [DEBUG] GET /static/js/bootstrap.min.js
+
+2015-08-04 02:34:09,110 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:09 +0000] [19765] [DEBUG] GET /assets/js/ie-emulation-modes-warning.js
+
+2015-08-04 02:34:09,112 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:09 +0000] [19763] [DEBUG] GET /starter-template.css
+
+2015-08-04 02:34:09,119 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:09 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:10,120 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:10 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:10,479 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:10 +0000] [19764] [DEBUG] GET /dist/js/bootstrap.min.js
+[2015-08-04 02:34:10 +0000] [19768] [DEBUG] GET /static/js/jquery-1.10.2.min.js
+[2015-08-04 02:34:10 +0000] [19768] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:34:10,487 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:10 +0000] [19765] [DEBUG] GET /static/js/jquery.min.js
+
+2015-08-04 02:34:11,122 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:11 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:11,148 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:11 +0000] [19763] [DEBUG] GET /static/js/bootstrap.min.js
+
+2015-08-04 02:34:11,489 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:11 +0000] [19765] [DEBUG] GET /dist/js/bootstrap.min.js
+
+2015-08-04 02:34:12,123 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:12 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:13,126 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:13 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:13,390 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:13 +0000] [19763] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:34:14,126 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:14 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:15,127 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:15 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:16,128 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:16 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:17,130 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:17 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:18,132 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:18 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:18,357 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:18 +0000] [19764] [DEBUG] GET /output
+
+2015-08-04 02:34:18,576 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:18 +0000] [19763] [DEBUG] GET /starter-template.css
+
+2015-08-04 02:34:18,585 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:18 +0000] [19768] [DEBUG] GET /assets/js/ie-emulation-modes-warning.js
+
+2015-08-04 02:34:18,588 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:18 +0000] [19765] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:34:19,133 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:19 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:19,289 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:19 +0000] [19768] [DEBUG] GET /assets/js/ie10-viewport-bug-workaround.js
+
+2015-08-04 02:34:20,134 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:20 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:21,135 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:21 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:22,137 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:22 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:23,139 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:23 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:24,139 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:24 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:24,161 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:24 +0000] [19765] [DEBUG] Closing connection. 
+
+2015-08-04 02:34:24,161 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:24 +0000] [19763] [DEBUG] Closing connection. 
+
+2015-08-04 02:34:25,141 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:25 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:26,142 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:26 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:27,143 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:27 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:28,146 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:28 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:29,146 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:29 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:30,147 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:30 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:31,149 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:31 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:34:32,150 DEBG 'myserver' stderr output:
+[2015-08-04 02:34:32 +0000] [19758] [DEBUG] 4 workers
+
+2015-08-04 02:36:58,111 CRIT Set uid to user 0
+2015-08-04 02:36:58,113 INFO daemonizing the supervisord process
+2015-08-04 02:36:58,114 INFO supervisord started with pid 19817
+2015-08-04 02:36:59,116 INFO spawned: 'myserver' with pid 19818
+2015-08-04 02:36:59,196 DEBG 'myserver' stderr output:
+[2015-08-04 02:36:59 +0000] [19818] [INFO] Starting gunicorn 19.3.0
+[2015-08-04 02:36:59 +0000] [19818] [INFO] Listening at: http://0.0.0.0:80 (19818)
+[2015-08-04 02:36:59 +0000] [19818] [INFO] Using worker: sync
+
+2015-08-04 02:36:59,197 DEBG 'myserver' stderr output:
+[2015-08-04 02:36:59 +0000] [19823] [INFO] Booting worker with pid: 19823
+
+2015-08-04 02:36:59,276 DEBG 'myserver' stderr output:
+[2015-08-04 02:36:59 +0000] [19826] [INFO] Booting worker with pid: 19826
+
+2015-08-04 02:36:59,356 DEBG 'myserver' stderr output:
+[2015-08-04 02:36:59 +0000] [19829] [INFO] Booting worker with pid: 19829
+
+2015-08-04 02:36:59,444 DEBG 'myserver' stderr output:
+[2015-08-04 02:36:59 +0000] [19832] [INFO] Booting worker with pid: 19832
+
+2015-08-04 02:37:00,445 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

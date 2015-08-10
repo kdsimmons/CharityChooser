@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>CharityChooser</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../static/js/jquery-1.11.0.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Style definitions copied from Andrew's site and edited. -->
+    <style>
+      .hack {display: none}
+      [href="#view01"] {display: block}
+
+      #view00:target ~ * col,
+      #view01:target ~ * col {visibility: visible}
+
+      #view00:target ~ * .extra-col {visibility: collapse}
+
+      /* class for hidden columns */
+      .extra-col {
+      visibility: collapse;
+      }
+      
+      .wide-col {
+      min-width: 15em;
+      }
+      
+      .container-big {
+      padding: 10px;
+      min-width: 800px;
+      }
+
+      .container-center {
+      padding: 10px;
+      margin: auto;
+      width: 90%;
+      }
+      
+      .container-left {
+      padding: 2px;
+      float:left;
+      width: 50%;
+      }
+
+      .container-right {
+      padding: 2px;
+      float:right;
+      width: 50%;
+      }
+
+      .table {
+      border: 1;
+      padding: 10px;
+      margin: auto;
+      width: 100%;
+      vertical-align: center;
+      border-collapse: collapse:
+      }
+
+      .left-cell {
+      text-align: left;
+      }
+
+      .center-cell {
+      text-align: center;
+      }
+
+      .right-cell {
+      text-align: right;
+      }
+
+      /* class for first header row with multi-column info */
+      .super-header {
+      }
+
+      .control-label {
+      font-size: 16px;
+      }
+
+      .form-control {
+      font-size: 16px;
+      }
+      
+      .btn {
+      font-size: 18px;
+      }
+
+      th {
+      font-size: 18px;
+      text-align: center;
+      }
+      
+      td {
+      text-align: center;
+      font-size: 18px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./input">CharityChooser</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+	    <li><a href="https://github.com/kdsimmons/InsightProject" target="_blank">GitHub</a></li>
+            <li><a href="./contact">Contact</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1zMyeldkEXbL4pYDvbZ2W9nXYbI4kKLzNJOWwDQFYMOU/pub?start=false&loop=false&delayms=3000" target="_blank">Slides</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container-center">
+      <div class="container-left">
+	<div class="starter-template">
+	  
+	  <br><br>
+	</div>
+	
+	<div class = "container">
+
+	  <form  action="/output" method="GET" class="form-horizontal">
+
+            <h4>Choose a type of charity to look for (required):</h4>
+
+	    <!disease: free response>
+            <div class="form-group">
+	      <div class="row">
+		<h4><label class="control-label col-sm-4" for="disease">Disease:</label>
+		  <div class="col-sm-2">
+	 	    <input class="form-control" type="text" id="disease" name='disease' placeholder="e.g. cancer">
+		  </div>
+		</h4>
+	      </div>
+            </div>
+            <div>
+	      <label class="control-label col-sm-4"></label> <! just using this line to get spacing right>
+              <button type="submit" class="btn btn-warning col-sm-3">Find charities!</button>
+
+            </div>
+            <br><br>
+	
+	    <h4>Select additional preferences (optional):</h4><br>
+
+            <h5>
+	<!state: choice of 50>
+	<div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="state">State:</label>
+	  <div class="col-sm-2">
+        	<select class="form-control" id="state" name="state">
+	<option value="">No preference</option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>				
+	  </div>
+	  </div>
+        </div>
+
+	<!age: young (1) or old (2)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="age">Company age:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="age" name="age">
+	      <option value="0">No preference</option>
+	      <option value="1">Young</option>
+	      <option value="2">Mid-age</option>
+	      <option value="3">Old</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!staff: big (3), medium (2), or small (1)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="staff_size">Size of staff:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="staff_size" name="staff_size">
+	      <option value="0">No preference</option>
+	      <option value="1">Small</option>
+	      <option value="2">Medium</option>
+	      <option value="3">Large</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!board: small (1), medium (2), or big (3)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="board_size">Size of board:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="board_size" name="board_size">
+	      <option value="0">No preference</option>
+	      <option value="1">Small</option>
+	      <option value="2">Medium</option>
+	      <option value="3">Large</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!total fundraising: low (3), medium (2), or high (3)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="total_contributions">Total contributions:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="total_contributions" name="total_contributions">
+	      <option value="0">No preference</option>
+	      <option value="1">Low</option>
+	      <option value="2">Medium</option>
+	      <option value="3">High</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!total expenses: low (1), medium (2), or high (3)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="total_expenses">Total expenses:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="total_expenses" name="total_expenses">
+	      <option value="0">No preference</option>
+	      <option value="1">Low</option>
+	      <option value="2">Medium</option>
+	      <option value="3">High</option>
+	    </select>
+	  </div>
+	  </div>
+        </div>
+
+	<!percent spent on programming: low (1), medium (2), or high(3)>
+        <div class="form-group">
+	  <div class="row">
+            <label class="control-label col-sm-4" for="percent_program">Percent of budget spent on programming:</label>
+	    <div class="col-sm-2">
+	      <select class="form-control"  id="percent_program" name="percent_program">
+		<option value="0">No preference</option>
+		<option value="1">Low</option>
+		<option value="2">Medium</option>
+		<option value="3">High</option>
+	      </select>
+	    </div>
+          </div>
+	</div>
+
+	<!social media presence: low (1) or high (2)>
+        <div class="form-group">
+	  <div class="row">
+            <label class="control-label col-sm-4" for="twitter_followers">Twitter followers:</label>
+	    <div class="col-sm-2">
+	      <select class="form-control" id="twitter_followers" name="twitter_followers">
+		<option value="0">No preference</option>
+		<option value="1">Low</option>
+		<option value="2">Medium</option>
+		<option value="3">High</option>
+	      </select>
+	    </div>
+          </div>
+	</div>
+	</h5>
+
+	<!tax: yes (1) or no (0)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="tax_exempt">Tax-exempt:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control" class="form-control" id="tax_exempt" name="tax_exempt">
+	      <option value="0">No preference</option>
+	      <option value="1" selected>Yes</option>
+	      <option value="2">No</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!BBB: yes (1) or no (0)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="bbb_accred">BBB accredited:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="bbb_accred" name="bbb_accred">
+	      <option value="0">No preference</option>
+	      <option value="1" selected>Yes</option>
+	      <option value="2">No</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!CN: yes (1) or no (0)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="cn_rated">Charity Navigator rating:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="cn_rated" name="cn_rated">
+	      <option value="0">No preference</option>
+	      <option value="1" selected>Yes</option>
+	      <option value="2">No</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+        <div>
+	  <label class="control-label col-sm-4"></label> <! just using this line to get spacing right>
+              <button type="submit" class="btn btn-warning col-sm-3">Find charities!</button>
+	  <br><br>
+        </div>
+
+      </form>
+    </div>
+    </div>
+    <br>
+
+    <!--script src="https://code.jquery.com/jquery-1.10.2.min.js"></script-->
+    <script src="static/js/jquery-1.10.2.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65915840-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>CharityChooser</title>
+
+        <!link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- THIS LINE -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Script links copied from Andrew's site. -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Style definitions copied from Andrew's site. -->
+    <style>
+
+      .hiddenRow {
+      padding: 0 !important;
+      }
+
+      .hiddenColumn {
+      padding: 0 !important;
+      }
+
+      .container-big {
+      padding: 10px;
+      min-width: 800px;
+      }
+
+      .container-center {
+      padding: 10px;
+      margin: auto;
+      width: 90%;
+      }
+      
+      .container-left {
+      padding: 2px;
+      float:left;
+      width: 50%;
+      }
+
+      .container-right {
+      padding: 2px;
+      float:right;
+      width: 50%;
+      }
+
+      .table {
+      border: 1;
+      padding: 10px;
+      margin: auto;
+      width: 100%;
+      vertical-align: center;
+      border-collapse: collapse:
+      }
+
+      .left-cell {
+      text-align: left;
+      }
+
+      .center-cell {
+      text-align: center;
+      }
+
+      .right-cell {
+      text-align: right;
+      }
+      
+      /* class for first header row with multi-column info */
+      .super-header {
+      }
+
+      th {
+      text-align: center;
+      }
+      
+      td {
+      text-align: center;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./input">CharityChooser</a>
+        </div> <!-- navbar-header -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1zMyeldkEXbL4pYDvbZ2W9nXYbI4kKLzNJOWwDQFYMOU/pub?start=false&loop=false&delayms=3000">Slides</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!-- container -->
+    </nav>
+
+    <br><br><br>
+
+<br>
+    <!-- Container with output for last search -->
+    <div class="container-center">
+      <div class="starter-template">
+        <h3>Recommended charities with a focus on {{the_focus}}:</h3>
+	<p id="error-message" class="lead">{{custom_error}}</p>
+      </div><!-- starter-template -->
+
+
+      <table class="table table-hover">
+	<thead>
+	<tr class="super-header">
+	  <th></th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
+	  <th colspan="3" class="center-cell">Charity Navigator Scores</th>
+	  <th></th>	
+	  <th></th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
+	  <th colspan="3" class="center-cell">Breakdown of Budget</th>
+	  <th></th>
+	</tr>
+	<tr class="super-header">
+	  <th>Rank</th>
+	  <th>Name</th>
+	  <th></th>
+	  <th>Address</th>
+	  <th>City</th>
+	  <th>Tax-exempt?</th>
+	  <th>BBB Accredited?</th>
+	  <th>Overall</th>
+	  <th>Financial Health</th>	
+	  <th>Accountability and Transparency</th>	
+	  <th>Year Founded</th>	
+	  <th>Staff Size</th>
+	  <th>Board Size</th>
+	  <th>Total Contributions</th>
+	  <th>Total Expenses</th>
+	  <th>Program</th>
+	  <th>Administrative</th>
+	  <th>Fund-raising</th>
+	  <th>Twitter Followers</th>
+	</tr>
+	</thead>
+	<tbody>
+        <tr>
+            <td>0</td>
+            <td data-toggle="collapse" data-target="#demo1" class="accordion-toggle">More information</td>
+	    <div class="hiddenColumn" style="border-collapse: collapse">
+	      <td class=" accordian-body collapse" id="demo1" style="border-collapse: collapse">Test</td>
+	    </div>
+        </tr>
+
+	{% for charity in charities %}
+	<tr>
+	  <td>{{charity['ranking']}}</td>
+
+	  {% if charity['link'] %}
+	  <td><a href={{charity['link']}} id="website">{{charity['name']}}</a></td>
+	  {% else %}
+	  <td>{{charity['name']}}</td>
+	  {% endif %}
+
+	  {% if charity['donate_link'] %}
+	  <td><a class="btn btn-primary" id="donate" href={{charity['donate_link']}}>Donate</a></td>
+	  {% else %}
+	  <td></td>
+	  {% endif %}
+	  
+	  <td>{{charity['address']}}</td>
+	  <td>{{charity['city']}}</td>
+	  <td>{{charity['tax_exempt']}}</td>
+
+	  {% if charity['bbb_link'] %}
+	  <td><a href={{charity['bbb_link']}} id="bbb">{{charity['bbb_accred']}}</a></td>
+	  {% else %}
+	  <td>{{charity['bbb_accred']}}</td>
+	  {% endif %}
+
+	  {% if charity['cn_link'] %}
+	  <td><a href={{charity['cn_link']}} id="charity-navigator">{{charity['cn_overall']}}</a></td>
+	  {% else %}
+	  <td>{{charity['cn_overall']}}</td>
+	  {% endif %}
+	  <td>{{charity['cn_financial']}}</td>
+	  <td>{{charity['cn_acct_transp']}}</td>
+
+	  <td>{{charity['year_incorporated']}}</td>
+	  <td>{{charity['staff_size']}}</td>
+	  <td>{{charity['board_size']}}</td>
+	  <td>{{charity['total_contributions']}}</td>
+	  <td>{{charity['total_expenses']}}</td>
+	  <td>{{charity['percent_program']}}</td>
+	  <td>{{charity['percent_admin']}}</td>
+	  <td>{{charity['percent_fund']}}</td>
+
+	  {% if charity['twitter_link'] %}
+	  <td><a href={{charity['twitter_link']}} id="twitter">{{charity['twitter_followers']}}</a></td>
+	  {% else %}
+	  <td>{{charity['twitter_followers']}}</td>
+	  {% endif %}
+	</tr>
+	{% endfor %}
+	</tbody>
+      </table>
+
+<!--Uncomment the following line to print the_result, currently used for debugging.-->
+<!--<p>The result is {{the_result}}.</p>-->
+
+     </div><!-- /.container --><!-- end of output table -->
+  <br>
+  <div class="container-center">
+  <!-- List of input for new search -->
+  <div class="container-left">
+    <div class="starter-template">
+	<br><br>
+        <h3>Find another charity:</h3>
+    </div><!-- starter-termplate -->
+
+    <div class = "container">
+
+      <form  action="/output" method="GET" class="form-horizontal">
+
+        <h3>Choose a type of charity to look for (required):</h3>
+
+	<!disease: free response>
+        <div class="form-group">
+	  <div class="row">
+            <h4><label class="control-label col-sm-4" for="disease">Disease:</label>
+	      <div class="col-sm-2">
+	 	<input class="form-control" type="text" id="disease" name='disease' placeholder="e.g. cancer" value={{ the_focus }}>
+	      </div>
+	    </h4>
+	  </div>
+        </div>
+        <div>
+	  <label class="control-label col-sm-4"></label> <! just using this line to get spacing right>
+              <button type="submit" class="btn btn-warning col-sm-3">Find charities!</button>
+
+        </div>
+          <br>
+	
+	<h3>Select additional preferences (optional):</h3><br>
+
+        <h5>
+	<!state: choice of 50>
+	<div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="state">State:</label>
+	  <div class="col-sm-2">
+        	<select class="form-control" id="state" name="state">
+	<option value="">No preference</option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>				
+	  </div>
+	  </div>
+        </div>
+
+	<!tax: yes (1) or no (0)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="tax_exempt">Tax-exempt:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control" class="form-control" id="tax_exempt" name="tax_exempt">
+	      <option value="0">No preference</option>
+	      <option value="1" selected>Yes</option>
+	      <option value="2">No</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!BBB: yes (1) or no (0)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="bbb_accred">BBB accredited:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="bbb_accred" name="bbb_accred">
+	      <option value="0">No preference</option>
+	      <option value="1" selected>Yes</option>
+	      <option value="2">No</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!CN: yes (1) or no (0)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="cn_rated">Charity Navigator rating:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="cn_rated" name="cn_rated">
+	      <option value="0">No preference</option>
+	      <option value="1" selected>Yes</option>
+	      <option value="2">No</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!age: young (1) or old (2)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="age">Company age:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="age" name="age">
+	      <option value="0">No preference</option>
+	      <option value="1">Young</option>
+	      <option value="2">Mid-age</option>
+	      <option value="3">Old</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!staff: big (3), medium (2), or small (1)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="staff_size">Size of staff:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="staff_size" name="staff_size">
+	      <option value="0">No preference</option>
+	      <option value="1">Small</option>
+	      <option value="2">Medium</option>
+	      <option value="3">Large</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!board: small (1), medium (2), or big (3)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="board_size">Size of board:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="board_size" name="board_size">
+	      <option value="0">No preference</option>
+	      <option value="1">Small</option>
+	      <option value="2">Medium</option>
+	      <option value="3">Large</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!total fundraising: low (3), medium (2), or high (3)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="total_contributions">Total contributions:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="total_contributions" name="total_contributions">
+	      <option value="0">No preference</option>
+	      <option value="1">Low</option>
+	      <option value="2">Medium</option>
+	      <option value="3">High</option>
+	    </select>
+	  </div>
+        </div>
+        </div>
+
+	<!total expenses: low (1), medium (2), or high (3)>
+        <div class="form-group">
+	  <div class="row">
+          <label class="control-label col-sm-4" for="total_expenses">Total expenses:</label>
+	  <div class="col-sm-2">
+	    <select class="form-control"  id="total_expenses" name="total_expenses">
+	      <option value="0">No preference</option>
+	      <option value="1">Low</option>
+	      <option value="2">Medium</option>
+	      <option value="3">High</option>
+	    </select>
+	  </div>
+	  </div>
+        </div>
+
+	<!percent spent on programming: low (1), medium (2), or high(3)>
+        <div class="form-group">
+	  <div class="row">
+            <label class="control-label col-sm-4" for="percent_program">Percent of budget spent on programming:</label>
+	    <div class="col-sm-2">
+	      <select class="form-control"  id="percent_program" name="percent_program">
+		<option value="0">No preference</option>
+		<option value="1">Low</option>
+		<option value="2">Medium</option>
+		<option value="3">High</option>
+	      </select>
+	    </div>
+          </div>
+	</div>
+
+	<!social media presence: low (1) or high (2)>
+        <div class="form-group">
+	  <div class="row">
+            <label class="control-label col-sm-4" for="twitter_followers">Twitter followers:</label>
+	    <div class="col-sm-2">
+	      <select class="form-control" id="twitter_followers" name="twitter_followers">
+		<option value="0">No preference</option>
+		<option value="1">Low</option>
+		<option value="2">Medium</option>
+		<option value="3">High</option>
+	      </select>
+	    </div>
+          </div>
+	</div>
+	</h5>
+
+        <div>
+	  <label class="control-label col-sm-4"></label> <! just using this line to get spacing right>
+              <button type="submit" class="btn btn-warning col-sm-3">Find charities!</button>
+	  <br><br>
+        </div>
+
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+  </div> <!-- /.container--><!-- end of input list -->
+  </div>
+      
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

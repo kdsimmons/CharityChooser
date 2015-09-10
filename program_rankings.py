@@ -66,13 +66,13 @@ def clean_data(data_df):
         if data_df['cn_rated'][idx] <= 0:
             for col in ['cn_overall', 'cn_acct_transp', 'cn_financial', 'percent_admin', 'percent_fund', 'percent_program', 
                         'total_contributions', 'total_expenses', 'total_revenue']:
-                data_df[idx:(idx+1)][col] = np.nan
+                data_df.ix[idx:(idx+1),col] = np.nan
         if data_df['year_incorporated'][idx] == -1:
-            data_df[idx:(idx+1)]['age'] = np.nan
-            data_df[idx:(idx+1)]['year_incorporated'] = np.nan
+            data_df.ix[idx:(idx+1),'age'] = np.nan
+            data_df.ix[idx:(idx+1),'year_incorporated'] = np.nan
         for col in data_df.columns:
             if data_df[col][idx] == -1:
-                data_df[idx:(idx+1)][col] = np.NaN
+                data_df.ix[idx:(idx+1),col] = np.NaN
 
     return data_df
 

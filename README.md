@@ -12,7 +12,7 @@ These files are run once to build the database of charities.
 1. get_distributions.py: functions to create table of summary statistics
 1. master_disease_list.py: utility to load in list of diseases
 
-## Run the website.
+## Run the website
 
 These files are run in real time whenever someone visits the website.
 

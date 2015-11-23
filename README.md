@@ -8,7 +8,7 @@ CharityChooser was created to provide a site where users can find a list of char
 
 These files are run once to build the database of charities.
 
-0. [Note to self: do 'sudo mysqld_safe' from command line first.]
+0. [Note: do 'sudo mysqld_safe' from command line first.]
 1. make_database.py: main script to scrape data and build SQL database
 1. get_distributions.py: functions to create table of summary statistics
 1. master_disease_list.py: utility to load in list of diseases

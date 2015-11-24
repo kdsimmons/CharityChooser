@@ -1,20 +1,21 @@
 # Switching between local and AWS versions of app
+This document is mainly for my own reference when transferring code between AWS and my local machine.
 
 ## Moving files
-### On source
-zip -r app_DDDD.zip app
+#### On source
+<pre>zip -r app_DDDD.zip app</pre>
 
-### Local --> AWS
+#### Local --> AWS
 transup app_DDDD.zip
 
-### AWS --> local
+#### AWS --> local
 transdown app_DDDD.zip
 
-### On destination
+#### On destination
 unzip -o app_DDDD.zip
 
 ## Changing filenames
-### On either version, above app directory
+#### On either version, above app directory
 . ChangePaths.sh
 
 ### Local only

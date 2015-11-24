@@ -6,28 +6,30 @@ This document is mainly for my own reference when transferring code between AWS 
 <pre>zip -r app_DDDD.zip app</pre>
 
 #### Local --> AWS
-transup app_DDDD.zip
+<pre>transup app_DDDD.zip</pre>
 
 #### AWS --> local
-transdown app_DDDD.zip
+<pre>transdown app_DDDD.zip</pre>
 
 #### On destination
-unzip -o app_DDDD.zip
+<pre>unzip -o app_DDDD.zip</pre>
 
 ## Changing filenames
 #### On either version, above app directory
-. ChangePaths.sh
+<pre>. ChangePaths.sh</pre>
 
-### Local only
-cp myapp_local.conf myapp.conf
+#### Local only
+<pre>cp myapp_local.conf myapp.conf</pre>
 
-### AWS only
-cp myapp_aws.conf myapp.conf
+#### AWS only
+<pre>cp myapp_aws.conf myapp.conf</pre>
 
 ## Converting mySQL database
-### SQL --> dump
-mysqldump -u sqluser -p charity_data > dumpcharity.sql
+#### SQL --> dump
+<pre>mysqldump -u sqluser -p charity_data > dumpcharity.sql</pre>
 
-### dump --> SQL
+#### dump --> SQL
+<pre>
 mysql -u sqluser -p create database charity_data
 mysql -u sqluser -p charity_data < dumpcharity.sql
+</pre>

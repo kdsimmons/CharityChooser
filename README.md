@@ -24,7 +24,7 @@ These files are run in real time whenever someone visits the website.
 * Supervisor server 
   * start_app: command to start running app with supervisor
   * myapp.conf: supervisord configuration
-  * supervisord.log,supervisord.pid: info printed by supervisord
+  * supervisord.log, supervisord.pid: info printed by supervisord
 * templates directory: HTML templates
 * static directory: CSS, JS, and font files needed to run website
 

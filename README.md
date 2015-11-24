@@ -18,7 +18,7 @@ These files are run once to build the database of charities.
 These files are run in real time whenever someone visits the website.
 
 * Python code
-  * __init__.py: wrapper to implement Flask
+  * \__init__.py: wrapper to implement Flask
   * views.py: outer code to run app
   * program_rankings.py: functions to rank charities
 * Supervisor server 

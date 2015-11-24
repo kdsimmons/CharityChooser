@@ -4405,3 +4405,37 @@
 /media/kristy/SDCard/Dropbox/KristyInsight/app/views.py:157: FutureWarning: the 'outtype' keyword is deprecated, use 'orient' instead
   charities = top_charities.to_dict(outtype='records')
 
+2015-11-24 15:56:23,370 CRIT Set uid to user 0
+2015-11-24 15:56:23,391 INFO daemonizing the supervisord process
+2015-11-24 15:56:23,396 INFO supervisord started with pid 22189
+2015-11-24 15:56:24,400 INFO spawned: 'myserver' with pid 22194
+2015-11-24 15:56:25,011 DEBG 'myserver' stderr output:
+[2015-11-24 15:56:25 +0000] [22194] [INFO] Starting gunicorn 19.3.0
+
+2015-11-24 15:56:25,015 DEBG 'myserver' stderr output:
+[2015-11-24 15:56:25 +0000] [22194] [INFO] Listening at: http://0.0.0.0:5000 (22194)
+
+2015-11-24 15:56:25,015 DEBG 'myserver' stderr output:
+[2015-11-24 15:56:25 +0000] [22194] [INFO] Using worker: sync
+
+2015-11-24 15:56:25,025 DEBG 'myserver' stderr output:
+[2015-11-24 15:56:25 +0000] [22199] [INFO] Booting worker with pid: 22199
+
+2015-11-24 15:56:25,124 DEBG 'myserver' stderr output:
+[2015-11-24 15:56:25 +0000] [22200] [INFO] Booting worker with pid: 22200
+
+2015-11-24 15:56:25,163 DEBG 'myserver' stderr output:
+[2015-11-24 15:56:25 +0000] [22201] [INFO] Booting worker with pid: 22201
+
+2015-11-24 15:56:25,195 DEBG 'myserver' stderr output:
+[2015-11-24 15:56:25 +0000] [22204] [INFO] Booting worker with pid: 22204
+
+2015-11-24 15:56:26,195 INFO success: myserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-11-24 15:56:33,785 DEBG 'myserver' stderr output:
+/media/kristy/SDCard/Dropbox/KristyInsight/app/program_rankings.py:142: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  fulldf.sort(columns='gower', ascending=False, inplace=True)
+
+2015-11-24 15:56:33,800 DEBG 'myserver' stderr output:
+/media/kristy/SDCard/Dropbox/KristyInsight/app/views.py:157: FutureWarning: the 'outtype' keyword is deprecated, use 'orient' instead
+  charities = top_charities.to_dict(outtype='records')
+

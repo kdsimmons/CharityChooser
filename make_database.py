@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# Main file to create a database of charitable organizations.
+
 import pandas as pd
 import bs4
 import re, numpy as np
@@ -12,33 +14,41 @@ import master_disease_list
 import urlparse
 
 def scrape_bbb_urls(disease):
+    """Start with a disease and create a beautiful soup object for each page of relevant BBB search results."""
     # import URL into beautiful soup object
 
+    # Construct URL for first page of results.
     dis_as_str = '+'.join(disease.split())
     base_url = "http://give.org"
     give_org_url = base_url + "/search/?term=" + dis_as_str + "&location=&FilterAccredited=false&tobid="
     
-    bbb_soups = []
+    # Loop through pages of search results until there are no additional results.
 
-    # loop through all pages of search results
+    bbb_soups = [] # List of soups, one for each page
+
     more_pages = True 
     while(more_pages):
+        # Create Beautiful Soup object for the current page of results
         response = requests.get(give_org_url)
         soup = bs4.BeautifulSoup(response.text)
         bbb_soups.append(soup)
+
+        # Find all links to other pages
         next_link = soup.select('a[href*=search/?page]')
         
+        # Go through links to find the next page. 
         more_pages = False
         for link in next_link:
-            if re.findall('.*Next.*', link.getText()):
-                give_org_url = base_url + link.attrs['href']
+            if re.findall('.*Next.*', link.getText()): # 'Next' is label on link for the next page.
+                give_org_url = base_url + link.attrs['href'] # Use the next page for the following loop
                 more_pages = True
 
     return bbb_soups
 
 def clean_bbb_info(bbb_soups,disease):
-    # pull out charity links and info
-    # NOTE: May need permission to include links to BBB. I didn't find any info on restrictions in pulling information.
+    """Extract desired information from BBB search results."""
+
+    # Go through Beautiful Soup objects to find data available directly on the search results page.
     charities = []
     for soup in bbb_soups:
         tables = soup.select('div.search table')
@@ -46,23 +56,27 @@ def clean_bbb_info(bbb_soups,disease):
             print "No charities found."
             return charities
             # TO DO: make this an error code instead of continuing to run
+        # Each charity is structured as a row within a single table.
         bbb_table = tables[0].tbody 
         for row in bbb_table.findAll('tr'):
             charity_data = {}
             charity_data['disease'] = disease
-            charity_data['name'] = row.select('a.charity-link')[0].get_text().replace(u'\u2019', u'\'')
+            charity_data['name'] = row.select('a.charity-link')[0].get_text().replace(u'\u2019', u'\'') # Do some cleaning of unicode characters.
             charity_data['bbb_link'] = row.select('a.charity-link')[0].attrs.get('href')
+
+            # BBB accreditation can be denoted by an image or by a 'yes' or 'no.'
             accred_seal = row.select('img.charity-search-seal')
             if accred_seal:
                 charity_data['bbb_accred'] = accred_seal[0].attrs.get('alt')
             else:
                 charity_data['bbb_accred'] = row.select('div.accreditation-mobile')[0].get_text()
+
             charity_data['address'] = row.select('div.accreditation-mobile')[0].next_sibling.strip('" ').replace(u'\u2019', u'\'')
             charity_data['city'] = row.select('div.accreditation-mobile')[0].next_sibling.next_sibling.next_sibling.strip('" ')
             
             charities.append(charity_data)
 
-    # get other data from BBB where possible
+    # Get other data from charity's site on  BBB.
     for charity in charities:
         response = requests.get(charity['bbb_link'])
         soup = bs4.BeautifulSoup(response.text)
@@ -75,6 +89,7 @@ def clean_bbb_info(bbb_soups,disease):
         except:
             charity['year_incorporated'] = -1
         try:
+            purpdiv = soup.select('div#purpose')[0]
             tag = purpdiv.findNext(text=re.compile('Stated Purpose'))
             charity['purpose'] = tag.findNext('p').replace(u'\u2019', u'\'').text.strip('" ')
         except:
@@ -100,8 +115,9 @@ def clean_bbb_info(bbb_soups,disease):
 
 
 def get_charity_links(charities):
-    # Use BBB pages to get links to each charity's website
+    """Use BBB pages to get links to each charity's website."""
     
+    # Website can be included in charity-contact or charity-detail-text section or labels as a url.
     for charity in charities:
         soup = bs4.BeautifulSoup(requests.get(charity['bbb_link']).text)
         if len(soup.select('div.charity-contact')) > 0:
@@ -112,27 +128,31 @@ def get_charity_links(charities):
             charity['link'] = soup.select('a#ctl00_ContentPlaceHolder1_aWebUrl')[0].attrs.get('href')
         else:
             charity['link'] = ''
-    # TO DO: should add text search for websites printed as text rather than link
+    # TO DO: add text search for websites printed as text rather than link
     
     return charities
 
 def scrape_social_media(charities):
-    # Find Facebook likes and Twitter followers for each charity
+    """Find links to Twitter, Faceboook, and donation page for each charity."""
+
     # TO DO: Find the right FB/Twitter account, e.g. for National MS Society chapters.
+
     for charity in charities:
+        # We can't get social media info if we don't have a direct link for the charity's website.
         if charity['link'] == '':
             charity['facebook_link'] = ''
             charity['twitter_link'] = ''
         else: 
             try:
+                # Try to read the organization's website with Beautiful Soup.
                 page = urllib2.urlopen(urllib2.Request(charity['link'], headers={'User-Agent' : 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'}))
                 target_soup = bs4.BeautifulSoup(page.read(), 'html.parser')
             except:
-                #print charity['name']
                 charity['facebook_link'] = ''
                 charity['twitter_link'] = ''
                 continue
-    
+            
+            # Look for links to Facebook and Twitter on main website.
             try:
                 fblink = target_soup.select('a[href*=facebook.com]')[0].attrs.get('href')
             except IndexError:
@@ -145,6 +165,7 @@ def scrape_social_media(charities):
                 twlink = ''
             charity['twitter_link'] = twlink
 
+            # Look for direct donation link by searching links for one with labels including 'donate', 'donation', or 'contribute'.
             donlinks = target_soup.findAll('a')
             charity['donate_link'] = ''
             for link in donlinks:
@@ -159,7 +180,9 @@ def scrape_social_media(charities):
     return charities
 
 def get_twitter_followers(charities):
-    # import authorization info 
+    """Find the number of Twitter followers each organization has."""
+
+    # Import authentication info to use with Tweepy.
     twauth = pd.DataFrame.from_csv('/home/kristy/Documents/auth_codes/twitter_access.csv')
     auth = tweepy.OAuthHandler(twauth.consumer_key['twitter'], twauth.consumer_secret['twitter'])
     auth.set_access_token(twauth.access_token['twitter'], twauth.access_secret['twitter'])
@@ -167,14 +190,17 @@ def get_twitter_followers(charities):
     api = tweepy.API(auth)
     
     for charity in charities:
+        # Without a Twitter link, we can't find the number of followers.
         if charity['twitter_link'] == '':
             charity['twitter_followers'] = -1
         else:
             try:
+                # Extract user ID from Twitter link if possible.
                 twitterid = re.findall('http[s]*://twitter.com/(.*)', charity['twitter_link'])[0]
                 user = api.get_user(twitterid)
                 charity['twitter_followers'] = user.followers_count
             except:
+                # Set followers to missing if we can't find an ID.
                 charity['twitter_followers'] = -1
                 continue
                 
@@ -182,9 +208,13 @@ def get_twitter_followers(charities):
 
 
 def get_char_nav_info(dictlist): 
+    """Scrape information from Charity Navigator."""
+
     for charity in dictlist:
-        # get link to Charity Navigator's website on this charity
+        # Search for charity by name on Charity Navigator's website.
         words = '+'.join(charity['name'].split())
+
+        # Search results are divided in rated and unrated organizations.  Look for the organization in the rated section first.
         url = ('https://www.charitynavigator.org/index.cfm?keyword_list=' + words 
                + '&nameonly=1&Submit2=Search&bay=search.results')
         response = requests.get(url)
@@ -192,6 +222,8 @@ def get_char_nav_info(dictlist):
         if len(soup.select('p.rating')) > 0:
             charity['cn_link'] = soup.select('p.rating')[0].a.attrs.get('href')
             charity['cn_rated'] = 'Rated'
+
+        # If the charity isn't rated, check the unrated search results.
         else:
             url = ('https://www.charitynavigator.org/index.cfm?keyword_list=' + words 
                    + '&nameonly=1&Submit2=Search&bay=search.results2')
@@ -204,6 +236,7 @@ def get_char_nav_info(dictlist):
                 print charity['name'] + ": No Charity Navigator link."
                 charity['cn_link'] = ''
                 charity['cn_rated'] = ''
+            # All Charity Navigator info is missing for unrated organizations.
             charity['cn_overall'] = -1.
             charity['cn_financial'] = -1.
             charity['cn_acct_transp'] = -1.
@@ -217,33 +250,33 @@ def get_char_nav_info(dictlist):
             charity['ein'] = ''
             continue
         
-        # get Charity Navigator data 
+        # Get data for this charity.
         charsoup = bs4.BeautifulSoup(requests.get(charity['cn_link']).text)
         
         overall_tags = charsoup.findAll('strong', text='Overall')
         fin_tags = charsoup.findAll('strong', text=re.compile('\WFinancial'))
         acct_tags = charsoup.findAll('strong', text=re.compile('\WAccountability & Transparency'))
         
-        # include overall rating
+        # overall score
         if len(overall_tags) >= 1:
             charity['cn_overall'] = float(overall_tags[0].parent.nextSibling.nextSibling.text)
         else:
             print charity['name'] + ": No Overall cells."
             charity['cn_overall'] = -1.
-        # include financial rating
+        # financial score
         if len(fin_tags) >= 1:
             charity['cn_financial'] = float(fin_tags[0].parent.nextSibling.nextSibling.text)
         else:
             print "No Financial cells"
             charity['cn_financial'] = -1.
-        # include accountability rating
+        # accountability score
         if len(acct_tags) >= 1:
             charity['cn_acct_transp'] = float(acct_tags[0].parent.nextSibling.nextSibling.text)
         else:
             print "No Accountability & Transparency cells"
             charity['cn_acct_transp'] = -1.
          
-        # compensation of leaders
+        # Find compensation of leaders and convert to a single string.
         compensation = []
         for heading in charsoup.select('h2'):
             comphead = re.findall('Compensation of Leaders', heading.text)
@@ -256,7 +289,7 @@ def get_char_nav_info(dictlist):
                             compensation.append(cell.text.strip())
         charity['leader_compensation'] = '+'.join(compensation)
         
-        # basic financial info
+        # Extract basic financial info from table of text and store as numeric.
         expenses = charsoup.find('a', onmouseover=re.compile('Total Functional Expenses')).findNext('td').text
         contributions = charsoup.find('strong', text=re.compile('Total Contributions')).findNext('td').text
         revenue = charsoup.find('strong', text=re.compile('TOTAL REVENUE')).findNext('td').text
@@ -265,35 +298,7 @@ def get_char_nav_info(dictlist):
         charity['total_contributions'] = int(contributions.strip('$').replace(',', ''))
         charity['total_revenue'] = int(revenue.strip('$').replace(',', ''))
         
-        metrics = charsoup.find(text=re.compile('Financial Performance Metrics'))
-        program = metrics.findNext('a', onmouseover=re.compile('Program Expenses')).findNext('td').text
-        administrative = metrics.findNext('a', onmouseover=re.compile('Administrative Expenses')).findNext('td').text
-        fundraising = metrics.findNext('a', onmouseover=re.compile('Fundraising Expenses')).findNext('td').text
-        
-        charity['percent_program'] = float(program.strip('%'))
-        charity['percent_admin'] = float(administrative.strip('%'))
-        charity['percent_fund'] = float(fundraising.strip('%'))         # compensation of leaders
-        compensation = []
-        for heading in charsoup.select('h2'):
-            comphead = re.findall('Compensation of Leaders', heading.text)
-            if len(comphead) > 0:
-                comptable = heading.nextSibling.nextSibling
-                
-                for row in comptable.findAll("tr"):
-                    for cell in row.findAll("td"):
-                        if re.findall("\$", cell.text):
-                            compensation.append(cell.text.strip())
-        charity['leader_compensation'] = '+'.join(compensation)
-        
-        # basic financial info
-        expenses = charsoup.find('a', onmouseover=re.compile('Total Functional Expenses')).findNext('td').text
-        contributions = charsoup.find('strong', text=re.compile('Total Contributions')).findNext('td').text
-        revenue = charsoup.find('strong', text=re.compile('TOTAL REVENUE')).findNext('td').text
-
-        charity['total_expenses'] = int(expenses.strip('$').replace(',', ''))
-        charity['total_contributions'] = int(contributions.strip('$').replace(',', ''))
-        charity['total_revenue'] = int(revenue.strip('$').replace(',', ''))
-        
+        # Extract performance statistics from table of links and store as numeric.
         metrics = charsoup.find(text=re.compile('Financial Performance Metrics'))
         program = metrics.findNext('a', onmouseover=re.compile('Program Expenses')).findNext('td').text
         administrative = metrics.findNext('a', onmouseover=re.compile('Administrative Expenses')).findNext('td').text
@@ -302,39 +307,8 @@ def get_char_nav_info(dictlist):
         charity['percent_program'] = float(program.strip('%'))
         charity['percent_admin'] = float(administrative.strip('%'))
         charity['percent_fund'] = float(fundraising.strip('%'))         
-        
-        # compensation of leaders
-        compensation = []
-        for heading in charsoup.select('h2'):
-            comphead = re.findall('Compensation of Leaders', heading.text)
-            if len(comphead) > 0:
-                comptable = heading.nextSibling.nextSibling
-                
-                for row in comptable.findAll("tr"):
-                    for cell in row.findAll("td"):
-                        if re.findall("\$", cell.text):
-                            compensation.append(cell.text.strip())
-        charity['leader_compensation'] = '+'.join(compensation)
-        
-        # basic financial info
-        expenses = charsoup.find('a', onmouseover=re.compile('Total Functional Expenses')).findNext('td').text
-        contributions = charsoup.find('strong', text=re.compile('Total Contributions')).findNext('td').text
-        revenue = charsoup.find('strong', text=re.compile('TOTAL REVENUE')).findNext('td').text
 
-        charity['total_expenses'] = int(expenses.strip('$').replace(',', ''))
-        charity['total_contributions'] = int(contributions.strip('$').replace(',', ''))
-        charity['total_revenue'] = int(revenue.strip('$').replace(',', ''))
-        
-        metrics = charsoup.find(text=re.compile('Financial Performance Metrics'))
-        program = metrics.findNext('a', onmouseover=re.compile('Program Expenses')).findNext('td').text
-        administrative = metrics.findNext('a', onmouseover=re.compile('Administrative Expenses')).findNext('td').text
-        fundraising = metrics.findNext('a', onmouseover=re.compile('Fundraising Expenses')).findNext('td').text
-        
-        charity['percent_program'] = float(program.strip('%'))
-        charity['percent_admin'] = float(administrative.strip('%'))
-        charity['percent_fund'] = float(fundraising.strip('%'))
-
-        # EIN
+        # Extract EIN
         a = charsoup.findAll('a', text='EIN')
         if len(a) > 0:
             ein = re.findall('([0-9]+-*[0-9]*)', a[0].nextSibling)
@@ -344,6 +318,8 @@ def get_char_nav_info(dictlist):
     return dictlist
 
 def clean_features(pandadf):
+    """Clean data after scraping from the web."""
+
     # Get organization age
     pandadf['age'] = 2015 - pandadf['year_incorporated']
     pandadf['year_incorporated'][pandadf['year_incorporated'] == 0] = -1
@@ -372,13 +348,17 @@ def clean_features(pandadf):
 
 # make sure to do sudo mysqld_safe from command line first
 def convert_to_sql(pandadf,disease):
+    """Store Pandas dataframe as a MySQL database."""
+
+    # Retrieve authentication info.
     mysqlauth = pd.DataFrame.from_csv('/home/kristy/Documents/auth_codes/mysql_user.csv')
     user = mysqlauth.username[0]
     password = mysqlauth.password[0]
 
+    # Connect to database.
     con = mdb.connect('localhost', user, password, 'charity_data')
-    # try adding charset='utf8'
     
+    # Print the dataframe size for debugging and tracking.
     table_name = '_'.join(disease.split())
     print "\nTotal records in " + table_name + ": " + str(len(pandadf)) + "\n"
     
@@ -426,8 +406,9 @@ def convert_to_sql(pandadf,disease):
             )"\
         ) 
     
-        facebook_likes_placeholder = -1 # not scraped yet
+        facebook_likes_placeholder = -1 # not scraped 
 
+        # Insert data into table one row at a time.
         for idx in range(len(pandadf)):
             try:
                 value_str = ("\"" + str(pandadf.name[idx]) + "\",\"" 
@@ -473,22 +454,22 @@ def convert_to_sql(pandadf,disease):
                          VALUES(" + value_str + ")")
 
             except:
+                # Handle errors in conversion of this table.
                 print pandadf.purpose[idx]
                 print "\nProblem converting " + str(idx) + " to SQL."
                 print sys.exc_info()
                 continue
                 
+        # Return full table.
         cur.execute("SELECT * FROM " + str(table_name))
         rows = cur.fetchall()
-        #for row in rows:
-            #print row
 
     return rows
 
 
-
-# Define main() function to go through diseases and pull charity info.
 def main():
+    """Go through list of diseases, find charities for each one, scrape web for further information, and build database."""
+
     # Cycle through diseases
     disease_list = master_disease_list.return_diseases()
 

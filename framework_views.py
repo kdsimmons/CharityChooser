@@ -1,3 +1,6 @@
+# THIS FILE IS OBSOLETE.
+# USE supervisor VIA start_app INSTEAD OR RUN views.py DIRECTLY.
+
 from flask import render_template, request, Flask
 #from app import app (make sure this is commented out)
 

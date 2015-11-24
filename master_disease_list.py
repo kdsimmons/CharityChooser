@@ -1,2 +1,3 @@
 def return_diseases():
+    """Simply returns all diseases in the current database."""
     return ['alzheimer\'s disease', 'aids', 'als', 'autism', 'asthma', 'blindness', 'breast cancer', 'colon cancer', 'cerebral palsy', 'colorectal cancer', 'cystic fibrosis', 'crohn\'s disease', 'diabetes', 'dyslexia', 'deafness', 'depression', 'glaucoma', 'hemophilia', 'huntington\'s disease', 'leukemia', 'lung cancer', 'multiple sclerosis', 'muscular dystrophy', 'parkinson\'s disease', 'prostate cancer', 'cancer', 'tumor', 'melanoma', 'lymphoma', 'fibromyalgia', 'colitis', 'lupus', 'pancreatic cancer', 'ovarian cancer', 'mesothelioma', 'schizophrenia']

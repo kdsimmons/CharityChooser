@@ -320,7 +320,7 @@ def get_char_nav_info(dictlist):
 def clean_features(pandadf):
     """Clean data after scraping from the web."""
 
-    # Get organization age
+    # Compute organization age
     pandadf['age'] = 2015 - pandadf['year_incorporated']
     pandadf['year_incorporated'][pandadf['year_incorporated'] == 0] = -1
     pandadf['age'][pandadf['year_incorporated'] == -1] = -1
@@ -346,10 +346,11 @@ def clean_features(pandadf):
     
     return pandadf
 
-# make sure to do sudo mysqld_safe from command line first
 def convert_to_sql(pandadf,disease):
-    """Store Pandas dataframe as a MySQL database."""
-
+    """Store Pandas dataframe as a MySQL database.
+    Note that MySQL must be running (e.g. sudo mysqld_safe) for this to work.
+    """
+    
     # Retrieve authentication info.
     mysqlauth = pd.DataFrame.from_csv('/home/kristy/Documents/auth_codes/mysql_user.csv')
     user = mysqlauth.username[0]
@@ -362,6 +363,7 @@ def convert_to_sql(pandadf,disease):
     table_name = '_'.join(disease.split())
     print "\nTotal records in " + table_name + ": " + str(len(pandadf)) + "\n"
     
+    # Use the database connection to create and fill the table.
     with con:
         cur = con.cursor()
         
@@ -406,7 +408,7 @@ def convert_to_sql(pandadf,disease):
             )"\
         ) 
     
-        facebook_likes_placeholder = -1 # not scraped 
+        facebook_likes_placeholder = -1 # couldn't get this information, so put in a placeholder
 
         # Insert data into table one row at a time.
         for idx in range(len(pandadf)):
@@ -454,13 +456,13 @@ def convert_to_sql(pandadf,disease):
                          VALUES(" + value_str + ")")
 
             except:
-                # Handle errors in conversion of this table.
+                # Print an error message if this table couldn't be converted.
                 print pandadf.purpose[idx]
                 print "\nProblem converting " + str(idx) + " to SQL."
                 print sys.exc_info()
                 continue
                 
-        # Return full table.
+        # Return full table for any debuggin outside this function.
         cur.execute("SELECT * FROM " + str(table_name))
         rows = cur.fetchall()
 

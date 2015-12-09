@@ -13,8 +13,10 @@ sqlpass = mysqlauth.password[0]
 
 con = mdb.connect(user=sqluser, host="localhost", db="charity_data", password=sqlpass, charset='utf8')
 
-# Set up SQL table with distributions of features for faster conversion of user input.
+
 def main():
+    """Set up SQL table with distributions of features for faster conversion of user input."""
+
     # Set up SQL connection
     mysqlauth = pd.DataFrame.from_csv('/home/kristy/Documents/auth_codes/mysql_user.csv')
     sqluser = mysqlauth.username[0]
@@ -22,11 +24,12 @@ def main():
     
     con = mdb.connect(user=sqluser, host="localhost", db="charity_data", password=sqlpass, charset='utf8')
     
-    # Read in SQL data to get distributions for some variables.
+    # Set up a dataframe and get the list of diseases.
     combined_panda = pd.DataFrame(dtype=float)
     disease_list = master_disease_list.return_diseases()
 
     with con:
+        # Read in SQL data for each disease.
         for disease in disease_list:
             clean_disease_name = '_'.join(disease.lower().replace('\'s disease','').replace('\'s','').split())
             pandadf = pd.read_sql("SELECT cn_overall, cn_financial, cn_acct_transp, year_incorporated, age, twitter_followers, \
@@ -35,7 +38,7 @@ def main():
             if len(pandadf) > 0:
                 combined_panda = pd.concat([combined_panda, pandadf], 0, ignore_index=True)
 
-    # Fix NaNs that were originally encoded as -1.
+    # Missing values were encoding as -1 in SQL. We want them to be NaNs now.
     for idx in range(len(combined_panda)):
         if combined_panda['year_incorporated'][idx] == -1.:
             combined_panda[idx:(idx+1)]['age'] = np.nan
@@ -47,6 +50,7 @@ def main():
     # Make data frame with distributions of each feature.
     distribution = pd.DataFrame(columns=combined_panda.columns, index=['p0','p17','p25','p50','p75','p83','p100'], dtype='float')
 
+    # Store specified percentages of each variable.
     for col in distribution.columns:
         quantiles = combined_panda[col].describe(percentile_width=50.)
         distribution.loc['p0',col] = quantiles['min']
